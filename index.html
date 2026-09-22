@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Tanvi Garg — software, AI, security, privacy, and systems engineer." />
+  <meta name="description" content="Tanvi Garg — AI, security, privacy, infrastructure, and systems engineer." />
   <title>Tanvi Garg — Engineer / Researcher</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,112 +11,67 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="noise"></div>
-  <div class="cursor-glow" id="glow"></div>
-
+  <div class="noise"></div><div class="cursor-glow" id="glow"></div>
   <nav>
     <a class="mark" href="#top">TG<span>.</span></a>
     <div class="navlinks">
-      <a href="#work">work</a><a href="#experience">experience</a><a href="#about">about</a>
+      <a href="#work">work</a><a href="#publications">publications</a><a href="#experience">experience</a><a href="#about">about</a>
       <a class="pill" href="resume.pdf" target="_blank">résumé ↗</a>
     </div>
   </nav>
 
   <main id="top">
     <section class="hero">
-      <div class="eyebrow">ENGINEER · RESEARCHER · BUILDER</div>
-      <h1>I build systems at the edge of <em>AI</em>, <em>security</em> &amp; <em>infrastructure</em>.</h1>
-      <p class="lede">M.S. Computer Engineering @ Virginia Tech. I work on privacy-preserving multi-agent AI, adversarial LLM security, distributed systems, and 5G/O-RAN — and I like turning research questions into things that actually run.</p>
-      <div class="hero-actions">
-        <a class="cta" href="#work">Explore my work ↓</a>
-        <a href="mailto:tanvigarg@vt.edu">tanvigarg@vt.edu ↗</a>
+      <div class="hero-copy">
+        <div class="eyebrow">ENGINEER · RESEARCHER · BUILDER</div>
+        <h1>I build systems at the edge of <em>AI</em>, security &amp; infrastructure.</h1>
+        <p class="lede">M.S. Computer Engineering @ Virginia Tech. I work on privacy-preserving multi-agent AI, adversarial LLM security, distributed systems, and 5G/O-RAN — turning research questions into systems that actually run.</p>
+        <div class="hero-actions"><a class="cta primary" href="#work">View my work →</a><a class="cta" href="mailto:tanvigarg@vt.edu">Get in touch</a></div>
+        <div class="quick-links">
+          <a href="mailto:tanvigarg@vt.edu"><b>Email</b><span>tanvigarg@vt.edu ↗</span></a>
+          <a href="https://github.com/tanvg" target="_blank" rel="noreferrer"><b>GitHub</b><span>github.com/tanvg ↗</span></a>
+          <a href="https://www.linkedin.com/in/tanvigarg25" target="_blank" rel="noreferrer"><b>LinkedIn</b><span>tanvigarg25 ↗</span></a>
+          <a href="#publications"><b>Publications</b><span>4 selected works ↓</span></a>
+        </div>
       </div>
-      <div class="orb orb-a"></div><div class="orb orb-b"></div>
+      <div class="hero-art" aria-hidden="true"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="art-note">BUILD<br>RESEARCH<br>IMPACT ↗</div></div>
     </section>
 
-    <section class="ticker" aria-label="skills">
-      <div>PYTHON ✦ LANGGRAPH ✦ LLAMA3 ✦ SECURITY ✦ PRIVACY ✦ KUBERNETES ✦ 5G / O-RAN ✦ DISTRIBUTED SYSTEMS ✦ PYTORCH ✦ AWS ✦</div>
-    </section>
+    <section class="ticker" aria-label="skills"><div>PYTHON ✦ LANGGRAPH ✦ LLAMA3 ✦ SECURITY ✦ PRIVACY ✦ KUBERNETES ✦ 5G / O-RAN ✦ DISTRIBUTED SYSTEMS ✦ PYTORCH ✦ AWS ✦ PYTHON ✦ LANGGRAPH ✦ LLAMA3 ✦ SECURITY ✦ PRIVACY ✦ KUBERNETES ✦</div></section>
 
     <section id="work" class="section">
       <div class="section-head"><span>01 / SELECTED WORK</span><h2>Things I've built.</h2></div>
-
-      <article class="project featured">
-        <div class="project-num">01</div>
-        <div>
-          <div class="tags"><span>AI SECURITY</span><span>PRIVACY</span><span>LANGGRAPH</span><span>LLAMA3</span></div>
-          <h3>RoleGuard</h3>
-          <p class="project-sub">Privacy enforcement for multi-agent LLM systems.</p>
-          <p>Formalized role-boundary leakage: a privacy failure where agents receive sensitive information beyond their permitted scope. Built inference-time middleware that enforces role-scoped access control at every inter-agent boundary — without retraining the underlying models.</p>
-          <div class="metrics"><div><b>100→0%</b><small>PHI boundary violations</small></div><div><b>180</b><small>synthetic patients evaluated</small></div><div><b>100%</b><small>task completion preserved</small></div></div>
-          <p class="micro">Adversarially evaluated against prompt injection, role impersonation, and targeted PHI fishing.</p>
-        </div>
-      </article>
-
+      <article class="project featured"><div class="project-num">01</div><div><div class="tags"><span>AI SECURITY</span><span>PRIVACY</span><span>LANGGRAPH</span><span>LLAMA3</span></div><h3>RoleGuard</h3><p class="project-sub">Privacy enforcement for multi-agent LLM systems.</p><p>Formalized role-boundary leakage: a privacy failure where agents receive sensitive information beyond their permitted scope. Built inference-time middleware that enforces role-scoped access control at every inter-agent boundary — without retraining underlying models.</p><div class="metrics"><div><b>100→0%</b><small>PHI boundary violations</small></div><div><b>180</b><small>synthetic patients evaluated</small></div><div><b>100%</b><small>task completion preserved</small></div></div><p class="micro">Adversarially evaluated against prompt injection, role impersonation, and targeted PHI fishing.</p></div></article>
       <div class="project-grid">
-        <article class="project">
-          <div class="project-num">02</div>
-          <div class="tags"><span>FULL-STACK AI</span><span>IN PROGRESS</span></div>
-          <h3>AI Health Coach</h3>
-          <p>A personal weight-management platform that combines nutrition, exercise, steps, hydration, sleep, and body measurements into longitudinal progress tracking and AI-assisted weekly recommendations.</p>
-          <div class="stack">Python API · relational data · React/TypeScript · containers</div>
-        </article>
-        <article class="project acid">
-          <div class="project-num">03</div>
-          <div class="tags"><span>5G</span><span>O-RAN</span><span>SYSTEMS</span></div>
-          <h3>Near-RT RIC + xApps</h3>
-          <p>Deployed an O-RAN research environment with srsRAN, FlexRIC and ZeroMQ; implemented xApps for live signal metrics and traced a persistent UE–gNB attachment failure down to the RF driver layer.</p>
-          <div class="stack">srsRAN · FlexRIC · ZeroMQ · Wireshark · USRP X310</div>
-        </article>
+        <article class="project"><div class="project-num">02</div><div class="tags"><span>FULL-STACK AI</span><span>IN PROGRESS</span></div><h3>AI Health Coach</h3><p>A personal weight-management platform combining nutrition, exercise, activity, hydration, sleep, and body measurements into longitudinal tracking and AI-assisted weekly recommendations.</p><div class="stack">Python API · relational data · React/TypeScript · containers</div></article>
+        <article class="project acid"><div class="project-num">03</div><div class="tags"><span>5G</span><span>O-RAN</span><span>SYSTEMS</span></div><h3>Near-RT RIC + xApps</h3><p>Deployed an O-RAN research environment with srsRAN, FlexRIC and ZeroMQ; implemented xApps for live signal metrics and traced a persistent UE–gNB attachment failure to the RF driver layer.</p><div class="stack">srsRAN · FlexRIC · ZeroMQ · Wireshark · USRP X310</div></article>
+      </div>
+    </section>
+
+    <section id="publications" class="section publications">
+      <div class="section-head"><span>02 / PUBLICATIONS</span><h2>Research in print.</h2></div>
+      <div class="pub-list">
+        <article><span>2021 / 01</span><h3>A novel approach of privacy-preserving data sharing system through data-tagging with role-based access control.</h3><p>World Journal of Engineering</p></article>
+        <article><span>2021 / 02</span><h3>Challenges of Implementing Privacy Policies Across the Globe.</h3><p>Data Protection and Privacy in Healthcare · CRC Press</p></article>
+        <article><span>2020 / 03</span><h3>A survey on security and privacy issues in IoV.</h3><p>International Journal of Electrical &amp; Computer Engineering, 10(5)</p></article>
+        <article><span>2019 / 04</span><h3>A survey on implementing Privacy in Healthcare: An Indian perspective.</h3><p>International Journal of Advanced Trends in Computer Science and Engineering, 8(3), 963–982</p></article>
       </div>
     </section>
 
     <section id="experience" class="section dark">
-      <div class="section-head"><span>02 / EXPERIENCE</span><h2>Research that ships.</h2></div>
+      <div class="section-head"><span>03 / EXPERIENCE</span><h2>Research that ships.</h2></div>
       <div class="timeline">
-        <div class="job">
-          <div class="when">2023—NOW</div>
-          <div><h3>Graduate Research Assistant</h3><h4>Networks &amp; Systems Security Lab · Virginia Tech</h4>
-          <p>Security and privacy for distributed AI systems; prompt-injection failure analysis; real-time 5G NR telemetry, anomaly detection, and closed-loop RAN optimization.</p></div>
-        </div>
-        <div class="job">
-          <div class="when">2022—2023</div>
-          <div><h3>Research Programmer</h3><h4>Virginia Tech</h4>
-          <p>Dockerized decentralized authorization infrastructure, emulated 5G Core/RAN systems on Kubernetes, and built Python + SQL telemetry pipelines for root-cause analysis.</p></div>
-        </div>
-        <div class="job">
-          <div class="when">2020</div>
-          <div><h3>Web Development Intern</h3><h4>Make-A-Wish India</h4>
-          <p>Built web features cross-functionally and used analytics to inform iterative UX improvements.</p></div>
-        </div>
+        <div class="job"><div class="when">2023—NOW</div><div><h3>Graduate Research Assistant</h3><h4>Networks &amp; Systems Security Lab · Virginia Tech</h4><p>Security and privacy for distributed AI systems; prompt-injection failure analysis; real-time 5G NR telemetry, anomaly detection, and closed-loop RAN optimization.</p></div></div>
+        <div class="job"><div class="when">2022—2023</div><div><h3>Research Programmer</h3><h4>Virginia Tech</h4><p>Dockerized decentralized authorization infrastructure, emulated 5G Core/RAN systems on Kubernetes, and built Python + SQL telemetry pipelines for root-cause analysis.</p></div></div>
+        <div class="job"><div class="when">2020</div><div><h3>Web Development Intern</h3><h4>Make-A-Wish India</h4><p>Built web features cross-functionally and used analytics to inform iterative UX improvements.</p></div></div>
       </div>
     </section>
 
-    <section id="about" class="section split">
-      <div>
-        <div class="section-head"><span>03 / ABOUT</span><h2>Three degrees.<br>One obsession:<br><i>how systems behave.</i></h2></div>
-      </div>
-      <div class="about-copy">
-        <p>I'm completing an <strong>M.S. thesis in Computer Engineering at Virginia Tech</strong> with a 4.0 GPA, after an M.Eng. in Computer Science and a B.Tech. in Computer Science &amp; Engineering.</p>
-        <p>My work spans <strong>AI/ML, security &amp; privacy, distributed infrastructure, and networking</strong>. I have four publications across privacy-preserving data sharing, healthcare privacy, and connected-system security.</p>
-        <div class="skill-cloud">
-          <span>Python</span><span>SQL</span><span>PyTorch</span><span>Hugging Face</span><span>DeBERTa</span><span>LangGraph</span><span>Llama3</span><span>Docker</span><span>Kubernetes</span><span>AWS</span><span>HIPAA</span><span>RBAC</span><span>STRIDE</span><span>LINDDUN</span><span>OpenAirInterface</span><span>FlexRIC</span>
-        </div>
-      </div>
-    </section>
+    <section id="about" class="section split"><div><div class="section-head"><span>04 / ABOUT</span><h2>Research.<br>Systems.<br><i>Impact.</i></h2></div></div><div class="about-copy"><p>I'm completing an <strong>M.S. thesis in Computer Engineering at Virginia Tech</strong> with a 4.0 GPA, after an M.Eng. in Computer Science and a B.Tech. in Computer Science &amp; Engineering.</p><p>My work spans <strong>AI/ML, security &amp; privacy, distributed infrastructure, and networking</strong>.</p><div class="skill-cloud"><span>Python</span><span>SQL</span><span>PyTorch</span><span>Hugging Face</span><span>DeBERTa</span><span>LangGraph</span><span>Llama3</span><span>Docker</span><span>Kubernetes</span><span>AWS</span><span>HIPAA</span><span>RBAC</span><span>STRIDE</span><span>LINDDUN</span><span>OpenAirInterface</span><span>FlexRIC</span></div></div></section>
 
-    <section class="contact">
-      <p>Have an interesting system to build?</p>
-      <h2>Let's make it <span>weirdly good.</span></h2>
-      <div class="contact-links">
-        <a href="mailto:tanvigarg@vt.edu">EMAIL ↗</a>
-        <a href="https://www.linkedin.com/in/tanvigarg25" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
-        <a href="resume.pdf" target="_blank">RÉSUMÉ ↗</a>
-      </div>
-    </section>
+    <section class="contact"><p>Have an interesting system to build?</p><h2>Let's build something <span>useful.</span></h2><div class="contact-links"><a href="mailto:tanvigarg@vt.edu">EMAIL ↗</a><a href="https://github.com/tanvg" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/tanvigarg25" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="#publications">PUBLICATIONS ↑</a><a href="resume.pdf" target="_blank">RÉSUMÉ ↗</a></div></section>
   </main>
-
-  <footer><span>© <span id="year"></span> TANVI GARG</span><span>BUILT WITH CURIOSITY + TOO MANY TABS</span></footer>
+  <footer><span>© <span id="year"></span> TANVI GARG</span><span>AI · SECURITY · INFRASTRUCTURE</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
