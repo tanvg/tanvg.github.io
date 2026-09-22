@@ -1,0 +1,1 @@
+const glow=document.getElementById("glow");window.addEventListener("pointermove",e=>{glow.style.left=e.clientX+"px";glow.style.top=e.clientY+"px"});document.getElementById("year").textContent=new Date().getFullYear();const t=document.querySelector(".ticker div");t.innerHTML+=t.innerHTML;
