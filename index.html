@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Tanvi Garg — AI, security, privacy, infrastructure, and systems engineer." />
   <title>Tanvi Garg — Engineer / Researcher</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,16 +12,10 @@
 </head>
 <body>
   <div class="noise"></div><div class="cursor-glow" id="glow"></div>
-  <nav>
-    <a class="mark" href="#top">TG<span>.</span></a>
-    <div class="navlinks">
-      <a href="#work">work</a><a href="#publications">publications</a><a href="#experience">experience</a><a href="#about">about</a>
-      <a class="pill" href="resume.pdf" target="_blank">résumé ↗</a>
-    </div>
-  </nav>
+  <nav><div class="nav-inner"><a class="mark" href="#top">TG<span>.</span></a><div class="navlinks"><a href="#work">work</a><a href="#publications">publications</a><a href="#experience">experience</a><a href="#teaching">teaching</a><a href="#about">about</a><a class="pill" href="resume.pdf" target="_blank">résumé ↗</a></div></div></nav>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero shell">
       <div class="hero-copy">
         <div class="eyebrow">ENGINEER · RESEARCHER · BUILDER</div>
         <h1>I build systems at the edge of <em>AI</em>, security &amp; infrastructure.</h1>
@@ -31,7 +25,7 @@
           <a href="mailto:tanvigarg@vt.edu"><b>Email</b><span>tanvigarg@vt.edu ↗</span></a>
           <a href="https://github.com/tanvg" target="_blank" rel="noreferrer"><b>GitHub</b><span>github.com/tanvg ↗</span></a>
           <a href="https://www.linkedin.com/in/tanvigarg25" target="_blank" rel="noreferrer"><b>LinkedIn</b><span>tanvigarg25 ↗</span></a>
-          <a href="#publications"><b>Publications</b><span>4 selected works ↓</span></a>
+          <a href="https://scholar.google.com/citations?user=q3razZgAAAAJ&hl=en" target="_blank" rel="noreferrer"><b>Google Scholar</b><span>research profile ↗</span></a>
         </div>
       </div>
       <div class="hero-art" aria-hidden="true"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="art-note">BUILD<br>RESEARCH<br>IMPACT ↗</div></div>
@@ -39,39 +33,52 @@
 
     <section class="ticker" aria-label="skills"><div>PYTHON ✦ LANGGRAPH ✦ LLAMA3 ✦ SECURITY ✦ PRIVACY ✦ KUBERNETES ✦ 5G / O-RAN ✦ DISTRIBUTED SYSTEMS ✦ PYTORCH ✦ AWS ✦ PYTHON ✦ LANGGRAPH ✦ LLAMA3 ✦ SECURITY ✦ PRIVACY ✦ KUBERNETES ✦</div></section>
 
-    <section id="work" class="section">
+    <section id="work" class="section shell">
       <div class="section-head"><span>01 / SELECTED WORK</span><h2>Things I've built.</h2></div>
-      <article class="project featured"><div class="project-num">01</div><div><div class="tags"><span>AI SECURITY</span><span>PRIVACY</span><span>LANGGRAPH</span><span>LLAMA3</span></div><h3>RoleGuard</h3><p class="project-sub">Privacy enforcement for multi-agent LLM systems.</p><p>Formalized role-boundary leakage: a privacy failure where agents receive sensitive information beyond their permitted scope. Built inference-time middleware that enforces role-scoped access control at every inter-agent boundary — without retraining underlying models.</p><div class="metrics"><div><b>100→0%</b><small>PHI boundary violations</small></div><div><b>180</b><small>synthetic patients evaluated</small></div><div><b>100%</b><small>task completion preserved</small></div></div><p class="micro">Adversarially evaluated against prompt injection, role impersonation, and targeted PHI fishing.</p></div></article>
+      <article class="project featured"><div class="project-num">01</div><div><div class="tags"><span>AI SECURITY</span><span>PRIVACY</span><span>LANGGRAPH</span><span>LLAMA3</span></div><h3>RoleGuard</h3><p class="project-sub">Privacy enforcement for multi-agent LLM systems.</p><p>Formalized role-boundary leakage, where agents receive PHI beyond their permitted scope. Designed inference-time middleware enforcing role-scoped access control at every inter-agent boundary without retraining underlying LLM agents.</p><div class="metrics"><div><b>100→0%</b><small>PHI boundary violations</small></div><div><b>180</b><small>synthetic patients</small></div><div><b>100%</b><small>task completion preserved</small></div></div><p class="micro">Built the RoleLeak benchmark and evaluated prompt injection, role impersonation, and targeted PHI-fishing attacks in a cyclic LangGraph pipeline.</p></div></article>
       <div class="project-grid">
-        <article class="project"><div class="project-num">02</div><div class="tags"><span>FULL-STACK AI</span><span>IN PROGRESS</span></div><h3>AI Health Coach</h3><p>A personal weight-management platform combining nutrition, exercise, activity, hydration, sleep, and body measurements into longitudinal tracking and AI-assisted weekly recommendations.</p><div class="stack">Python API · relational data · React/TypeScript · containers</div></article>
-        <article class="project acid"><div class="project-num">03</div><div class="tags"><span>5G</span><span>O-RAN</span><span>SYSTEMS</span></div><h3>Near-RT RIC + xApps</h3><p>Deployed an O-RAN research environment with srsRAN, FlexRIC and ZeroMQ; implemented xApps for live signal metrics and traced a persistent UE–gNB attachment failure to the RF driver layer.</p><div class="stack">srsRAN · FlexRIC · ZeroMQ · Wireshark · USRP X310</div></article>
+        <article class="project"><div class="project-num">02</div><div class="tags"><span>FULL-STACK AI</span><span>IN PROGRESS</span></div><h3>AI Health Coach</h3><p>A personal weight-management platform for longitudinal nutrition, exercise, activity, hydration, sleep, and body-measurement tracking with AI-assisted weekly recommendations.</p><div class="stack">Python REST API · relational data · React/TypeScript · containers</div></article>
+        <article class="project acid"><div class="project-num">03</div><div class="tags"><span>5G</span><span>O-RAN</span><span>SYSTEMS</span></div><h3>Near-RT RIC + xApps</h3><p>Deployed a Near-RT RIC environment with srsRAN, FlexRIC and ZeroMQ; built xApps for real-time signal metrics via ORAN-E2SM-KPM and traced a persistent UE–gNB attachment failure to the ZeroMQ RF driver.</p><div class="stack">srsRAN · FlexRIC · ZeroMQ · Wireshark</div></article>
+        <article class="project"><div class="project-num">04</div><div class="tags"><span>5G NR SA</span><span>HARDWARE</span><span>NETWORKING</span></div><h3>OAI 5G NR + COTS UEs</h3><p>Established a 5G NR Standalone environment using OpenAirInterface and tested commercial OnePlus and Google Pixel devices. Configured USRP X310 radios, high-speed servers, 10G connectivity, and SIM provisioning.</p><div class="stack">OpenAirInterface · USRP X310 · 5G Core/RAN · COTS UEs</div></article>
+        <article class="project pink"><div class="project-num">05</div><div class="tags"><span>AUTHORIZATION</span><span>CONTAINERS</span><span>DISTRIBUTED SYSTEMS</span></div><h3>Wave Research Infrastructure</h3><p>Dockerized Wave, a decentralized authorization framework with transitive delegation, creating reproducible self-service research environments and reducing setup friction for experimentation.</p><div class="stack">Docker · decentralized authorization · transitive delegation</div></article>
       </div>
     </section>
 
-    <section id="publications" class="section publications">
-      <div class="section-head"><span>02 / PUBLICATIONS</span><h2>Research in print.</h2></div>
+    <section id="publications" class="section publications"><div class="shell inner-shell">
+      <div class="section-head"><span>02 / PUBLICATIONS</span><div><h2>Research in print.</h2><a class="scholar" href="https://scholar.google.com/citations?user=q3razZgAAAAJ&hl=en" target="_blank" rel="noreferrer">View all on Google Scholar ↗</a></div></div>
       <div class="pub-list">
-        <article><span>2021 / 01</span><h3>A novel approach of privacy-preserving data sharing system through data-tagging with role-based access control.</h3><p>World Journal of Engineering</p></article>
-        <article><span>2021 / 02</span><h3>Challenges of Implementing Privacy Policies Across the Globe.</h3><p>Data Protection and Privacy in Healthcare · CRC Press</p></article>
-        <article><span>2020 / 03</span><h3>A survey on security and privacy issues in IoV.</h3><p>International Journal of Electrical &amp; Computer Engineering, 10(5)</p></article>
-        <article><span>2019 / 04</span><h3>A survey on implementing Privacy in Healthcare: An Indian perspective.</h3><p>International Journal of Advanced Trends in Computer Science and Engineering, 8(3), 963–982</p></article>
+        <a href="https://scholar.google.com/citations?user=q3razZgAAAAJ&hl=en" target="_blank" rel="noreferrer"><article><span>2021 / 01</span><h3>A novel approach of privacy-preserving data sharing system through data-tagging with role-based access control.</h3><p>World Journal of Engineering <b>↗</b></p></article></a>
+        <a href="https://scholar.google.com/citations?user=q3razZgAAAAJ&hl=en" target="_blank" rel="noreferrer"><article><span>2021 / 02</span><h3>Challenges of Implementing Privacy Policies Across the Globe.</h3><p>Data Protection and Privacy in Healthcare · CRC Press <b>↗</b></p></article></a>
+        <a href="https://scholar.google.com/citations?user=q3razZgAAAAJ&hl=en" target="_blank" rel="noreferrer"><article><span>2020 / 03</span><h3>A survey on security and privacy issues in IoV.</h3><p>International Journal of Electrical &amp; Computer Engineering, 10(5) <b>↗</b></p></article></a>
+        <a href="https://scholar.google.com/citations?user=q3razZgAAAAJ&hl=en" target="_blank" rel="noreferrer"><article><span>2019 / 04</span><h3>A survey on implementing Privacy in Healthcare: An Indian perspective.</h3><p>International Journal of Advanced Trends in Computer Science and Engineering, 8(3), 963–982 <b>↗</b></p></article></a>
       </div>
-    </section>
+    </div></section>
 
-    <section id="experience" class="section dark">
-      <div class="section-head"><span>03 / EXPERIENCE</span><h2>Research that ships.</h2></div>
+    <section id="experience" class="section dark"><div class="shell inner-shell">
+      <div class="section-head"><span>03 / EXPERIENCE</span><h2>Research, systems &amp; teaching.</h2></div>
       <div class="timeline">
-        <div class="job"><div class="when">2023—NOW</div><div><h3>Graduate Research Assistant</h3><h4>Networks &amp; Systems Security Lab · Virginia Tech</h4><p>Security and privacy for distributed AI systems; prompt-injection failure analysis; real-time 5G NR telemetry, anomaly detection, and closed-loop RAN optimization.</p></div></div>
-        <div class="job"><div class="when">2022—2023</div><div><h3>Research Programmer</h3><h4>Virginia Tech</h4><p>Dockerized decentralized authorization infrastructure, emulated 5G Core/RAN systems on Kubernetes, and built Python + SQL telemetry pipelines for root-cause analysis.</p></div></div>
-        <div class="job"><div class="when">2020</div><div><h3>Web Development Intern</h3><h4>Make-A-Wish India</h4><p>Built web features cross-functionally and used analytics to inform iterative UX improvements.</p></div></div>
+        <div class="job"><div class="when">AUG 2023—NOW</div><div><h3>Graduate Research Assistant</h3><h4>Networks &amp; Systems Security Lab · Virginia Tech</h4><ul><li>Identified and benchmarked privacy leakage caused by unfiltered inter-agent message passing in multi-agent LLM pipelines.</li><li>Built middleware for role-scoped permission filtering grounded in HIPAA's minimum-necessary principle.</li><li>Conducted root-cause and statistical analysis of prompt-injection detection failures, identifying positional brittleness.</li><li>Analyzed real-time OAI / USRP X310 5G NR telemetry for anomaly detection and closed-loop RAN optimization.</li></ul></div></div>
+        <div class="job"><div class="when">JUN 2022—AUG 2023</div><div><h3>Research Programmer</h3><h4>Virginia Tech</h4><ul><li>Dockerized Wave, a decentralized authorization framework with transitive delegation.</li><li>Emulated 5G Core and gNBSIM RAN on Kubernetes using Docker Compose, Helm, Multus CNI and RKE; explored OAI + FlexRIC near-RT RIC optimization.</li><li>Built SQL and Python telemetry pipelines for real-time performance root-cause analysis.</li></ul></div></div>
+        <div class="job"><div class="when">AUG 2023—DEC 2023<br>AUG 2026—NOW</div><div><h3>Graduate Teaching Assistant</h3><h4>Network and Protocols · Virginia Tech</h4><p>Support graduate students and industry professionals with TCP/IP, network security protocols, packet analysis, office hours, and technical feedback.</p></div></div>
+        <div class="job"><div class="when">JAN—MAY 2024</div><div><h3>Graduate Teaching Assistant</h3><h4>Network Application Design · Virginia Tech</h4><p>Supported distributed application design and client-server architecture instruction, grading, office hours, and technical feedback.</p></div></div>
+        <div class="job"><div class="when">JUL—SEP 2020</div><div><h3>Web Development Intern</h3><h4>Make-A-Wish India</h4><p>Developed website features with cross-functional teams and used Google Ads and Analytics to inform iterative UX improvements.</p></div></div>
+        <div class="job"><div class="when">DEC 2018</div><div><h3>UX Design Intern</h3><h4>Net Solutions</h4><p>Contributed to web-application UX design and translated user feedback into iterative interface improvements with the product team.</p></div></div>
+      </div>
+    </div></section>
+
+    <section id="teaching" class="section teaching shell">
+      <div class="section-head"><span>04 / TEACHING</span><h2>Teaching technical ideas clearly.</h2></div>
+      <div class="teaching-grid">
+        <article class="teaching-card"><div class="when">AUG—DEC 2023 · AUG 2026—PRESENT</div><h3>Network and Protocols</h3><h4>Graduate Teaching Assistant · Virginia Tech</h4><p>Assist with graduate-level material on TCP/IP, network security protocols, and packet analysis. Hold office hours, clarify networking concepts, and provide technical feedback to graduate students and industry professionals in the MIT program.</p></article>
+        <article class="teaching-card"><div class="when">JAN—MAY 2024</div><h3>Network Application Design</h3><h4>Graduate Teaching Assistant · Virginia Tech</h4><p>Supported instruction on distributed application design and client-server architectures, graded technical assignments, held office hours, and helped students reason through implementation and design decisions.</p></article>
       </div>
     </section>
 
-    <section id="about" class="section split"><div><div class="section-head"><span>04 / ABOUT</span><h2>Research.<br>Systems.<br><i>Impact.</i></h2></div></div><div class="about-copy"><p>I'm completing an <strong>M.S. thesis in Computer Engineering at Virginia Tech</strong> with a 4.0 GPA, after an M.Eng. in Computer Science and a B.Tech. in Computer Science &amp; Engineering.</p><p>My work spans <strong>AI/ML, security &amp; privacy, distributed infrastructure, and networking</strong>.</p><div class="skill-cloud"><span>Python</span><span>SQL</span><span>PyTorch</span><span>Hugging Face</span><span>DeBERTa</span><span>LangGraph</span><span>Llama3</span><span>Docker</span><span>Kubernetes</span><span>AWS</span><span>HIPAA</span><span>RBAC</span><span>STRIDE</span><span>LINDDUN</span><span>OpenAirInterface</span><span>FlexRIC</span></div></div></section>
+    <section id="about" class="section split shell"><div><div class="section-head"><span>05 / ABOUT</span><h2>Research.<br>Systems.<br><i>Impact.</i></h2></div></div><div class="about-copy"><p>I'm completing an <strong>M.S. thesis in Computer Engineering at Virginia Tech</strong> with a 4.0 GPA, after an M.Eng. in Computer Science and a B.Tech. in Computer Science &amp; Engineering.</p><p>My work spans <strong>AI/ML, security &amp; privacy, distributed infrastructure, networking, and applied research</strong>. This site intentionally goes beyond the one-page résumé: it gives the projects, research, teaching, and technical context room to breathe.</p><div class="skill-cloud"><span>Python</span><span>SQL</span><span>PyTorch</span><span>Hugging Face</span><span>DeBERTa</span><span>scikit-learn</span><span>LangGraph</span><span>Llama3</span><span>Docker</span><span>Kubernetes</span><span>Helm</span><span>AWS</span><span>HIPAA</span><span>RBAC</span><span>STRIDE</span><span>LINDDUN</span><span>mCODE FHIR R4</span><span>OpenAirInterface</span><span>srsRAN</span><span>FlexRIC</span><span>USRP X310</span><span>ZeroMQ</span><span>Wireshark</span></div></div></section>
 
-    <section class="contact"><p>Have an interesting system to build?</p><h2>Let's build something <span>useful.</span></h2><div class="contact-links"><a href="mailto:tanvigarg@vt.edu">EMAIL ↗</a><a href="https://github.com/tanvg" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/tanvigarg25" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="#publications">PUBLICATIONS ↑</a><a href="resume.pdf" target="_blank">RÉSUMÉ ↗</a></div></section>
+    <section class="contact"><div class="shell"><p>Have an interesting system to build?</p><h2>Let's build something <span>useful.</span></h2><div class="contact-links"><a href="mailto:tanvigarg@vt.edu">EMAIL ↗</a><a href="https://github.com/tanvg" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/tanvigarg25" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="https://scholar.google.com/citations?user=q3razZgAAAAJ&hl=en" target="_blank" rel="noreferrer">GOOGLE SCHOLAR ↗</a><a href="resume.pdf" target="_blank">RÉSUMÉ ↗</a></div></div></section>
   </main>
-  <footer><span>© <span id="year"></span> TANVI GARG</span><span>AI · SECURITY · INFRASTRUCTURE</span></footer>
+  <footer><div class="shell footer-inner"><span>© <span id="year"></span> TANVI GARG</span><span>AI · SECURITY · INFRASTRUCTURE</span></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
